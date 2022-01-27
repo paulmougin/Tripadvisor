@@ -219,19 +219,19 @@ main .container h1 .highlight {
 
 /* MAIN → Page description */
 
-.page-description {
+.section1-page-description {
   justify-content: space-between;
   align-items: center;
   width: 50%;
   margin-bottom: 4rem;
 }
 
-.page-description h1 {
+.section1-page-description h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.page-description p {
+.section1-page-description p {
   font-size: large;
   color: #333333;
   font-weight: lighter;
@@ -240,27 +240,69 @@ main .container h1 .highlight {
 
 /* MAIN → Activities */
 
-.activities {
-  height: 400px;
-  background-color: lightgray;
+.section2 > div:nth-child(2) {
+  margin-top: 1rem;
+  /* background-color: blue; */
+  height: 100%;
   display: flex;
 }
 
-.activities .col-1 {
-  background-color: lightgreen;
-  width: 500px;
+.section2 .col1-activity {
+  /* background-color: red; */
   height: 100%;
+  width: calc(100% / 4);
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.section2 .col1-activity p {
+  margin: 1rem 0 0.5rem 0;
+  /* font-family: sans-serif; */
+  color: #474747;
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
-.activities h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  flex: 1;
+.section2 .col2-card-scroller {
+  /* background-color: green; */
+  height: 100%;
+  width: calc(100% / 4 * 3);
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
-.activities .col2 {
-  background-color: lightsalmon;
-  width: 500px;
+.section2 .card-scroller-itemview {
+  /* background-color: lightseagreen; */
+  /* border: black 2px solid;
+  box-sizing: border-box; */
   height: 100%;
-  flex: 3;
+  width: calc(100% / 3 - (3rem / 3));
+  flex-shrink: 0;
 }
+.section2 .card-scroller-itemview:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.section2 .card-content-info {
+  margin-top: 0.5rem;
+}
+
+.section2 .card-content-headerlink {
+  font-size: 18px;
+}
+
+.section2 .card-content-description {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #333333;
+}
+
+/*
+
+.activities .card-scroller-itemview {
+  background-color: lightseagreen;
+  height: 100%;
+  width: 200px;
+  border: black 2px solid;
+  box-sizing: border-box;
+} */
