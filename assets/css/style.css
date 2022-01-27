@@ -1,0 +1,266 @@
+/* || GENERAL STYLES */
+
+body {
+  font-family: "Trip Sans Med";
+  font-size: 16px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+.container {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  right: 0;
+  left: 0;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  overflow: auto;
+}
+
+header .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 188px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .primary-nav div {
+  margin-right: 1.5rem;
+}
+
+header .primary-nav div i {
+  margin-right: 0.5rem;
+}
+
+header .primary-button-m {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 80px;
+}
+
+main .container h1 {
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+main .container h1 .highlight {
+  color: #ff5d5d;
+}
+
+/* MAIN → Secondary Navigation */
+
+.secondary-nav {
+  height: 80px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.secondary-nav div {
+  border: black solid 2px;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.secondary-nav div:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* MAIN → Pictures */
+
+.pictures {
+  height: 432px;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.col-1 {
+  height: 100%;
+  width: 652px;
+  flex: 1;
+  margin-right: 2px;
+  position: relative;
+}
+
+.col-2 {
+  height: 100%;
+  width: 480px;
+}
+
+.col-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.col-2 img {
+  width: 100%;
+  height: calc(50% - 1px);
+  object-fit: cover;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.col-1 .primary-button-s {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  border-radius: 2rem;
+  border: none;
+  margin-right: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.col-1 .primary-button-s i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.col-1 img:hover {
+  opacity: 0.8;
+}
+
+.col-2 img:hover {
+  opacity: 0.8;
+}
+
+/* MAIN → Page details */
+.page-details {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* MAIN → Page details → Breadcrumbs */
+
+.breadcrumbs {
+  height: 40px;
+  width: 500px;
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  margin-right: 0.5rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.breadcrumbs i {
+  margin-right: 0.5rem;
+  font-size: 8px;
+  color: #333333;
+  align-items: center;
+}
+
+.breadcrumbs .page-details h5 {
+  background-color: royalblue;
+}
+
+.page-details h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* MAIN → Page description */
+
+.page-description {
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 4rem;
+}
+
+.page-description h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-description p {
+  font-size: large;
+  color: #333333;
+  font-weight: lighter;
+  line-height: 24px;
+}
+
+/* MAIN → Activities */
+
+.activities {
+  height: 400px;
+  background-color: lightgray;
+  display: flex;
+}
+
+.activities .col-1 {
+  background-color: lightgreen;
+  width: 500px;
+  height: 100%;
+}
+
+.activities h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.activities .col2 {
+  background-color: lightsalmon;
+  width: 500px;
+  height: 100%;
+  flex: 3;
+}
