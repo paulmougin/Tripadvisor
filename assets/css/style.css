@@ -240,21 +240,25 @@ main .container h1 .highlight {
 
 /* MAIN → Activities */
 
-.section2 > div:nth-child(2) {
+.activity-shelf {
   margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.activities .activity {
   /* background-color: blue; */
   height: 100%;
   display: flex;
 }
 
-.section2 .col1-activity {
+.activities .col1-activity {
   /* background-color: red; */
   height: 100%;
   width: calc(100% / 4);
   padding-right: 1rem;
   box-sizing: border-box;
 }
-.section2 .col1-activity p {
+.activities .col1-activity p {
   margin: 1rem 0 0.5rem 0;
   /* font-family: sans-serif; */
   color: #474747;
@@ -262,7 +266,7 @@ main .container h1 .highlight {
   line-height: 21.6px;
 }
 
-.section2 .col2-card-scroller {
+.activities .col2-card-scroller {
   /* background-color: green; */
   height: 100%;
   width: calc(100% / 4 * 3);
@@ -271,38 +275,42 @@ main .container h1 .highlight {
   overflow-x: scroll;
 }
 
-.section2 .card-scroller-itemview {
+.activities .card-scroller-itemview {
   /* background-color: lightseagreen; */
   /* border: black 2px solid;
   box-sizing: border-box; */
   height: 100%;
   width: calc(100% / 3 - (3rem / 3));
   flex-shrink: 0;
+  position: relative;
 }
-.section2 .card-scroller-itemview:not(:last-child) {
+.activities .card-scroller-itemview:not(:last-child) {
   margin-right: 1.5rem;
 }
 
-.section2 .card-content-info {
+.activities .card-content-info {
   margin-top: 0.5rem;
 }
 
-.section2 .card-content-headerlink {
+.activities .card-content-headerlink {
   font-size: 18px;
 }
 
-.section2 .card-content-description {
+.activities .card-content-description {
   font-size: 14px;
   font-weight: lighter;
   color: #333333;
 }
 
-/*
-
-.activities .card-scroller-itemview {
-  background-color: lightseagreen;
-  height: 100%;
-  width: 200px;
-  border: black 2px solid;
-  box-sizing: border-box;
-} */
+.activities .action-button {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
