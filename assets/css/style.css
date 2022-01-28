@@ -10,6 +10,11 @@ h1 {
   font-size: 54px;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .container {
   width: 1080px;
   height: 100%;
@@ -251,14 +256,14 @@ main .container h1 .highlight {
   display: flex;
 }
 
-.activities .col1-activity {
+.activities .col1-heading {
   /* background-color: red; */
   height: 100%;
   width: calc(100% / 4);
   padding-right: 1rem;
   box-sizing: border-box;
 }
-.activities .col1-activity p {
+.activities .col1-heading p {
   margin: 1rem 0 0.5rem 0;
   /* font-family: sans-serif; */
   color: #474747;
@@ -274,18 +279,32 @@ main .container h1 .highlight {
   overflow: hidden;
   overflow-x: scroll;
 }
+.activities .col2-card-scroller::-webkit-scrollbar {
+  width: 0 !important;
+}
 
 .activities .card-scroller-itemview {
   /* background-color: lightseagreen; */
   /* border: black 2px solid;
   box-sizing: border-box; */
-  height: 100%;
+  height: inherit;
   width: calc(100% / 3 - (3rem / 3));
   flex-shrink: 0;
   position: relative;
 }
+
+.card-scroller-itemview .card-img {
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-scroller-itemview img:hover {
+  opacity: 0.8;
+}
+
 .activities .card-scroller-itemview:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .activities .card-content-info {
@@ -313,4 +332,58 @@ main .container h1 .highlight {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.forums {
+  height: 300px;
+}
+
+.forums .heading {
+  /* background-color: yellowgreen; */
+  height: 40px;
+  display: flex;
+}
+
+.heading h3 {
+  flex: 1;
+}
+.heading p {
+  justify-content: right;
+}
+
+.card-item-platter {
+  display: flex;
+}
+
+.card-itemview {
+  background-color: #f9f1ec;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card-itemview:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.forum-subject {
+  margin-bottom: 1rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 0.5rem;
 }
