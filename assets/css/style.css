@@ -24,6 +24,10 @@ h3 {
   left: 0;
 }
 
+.highlight{
+    font-weight: bolder;
+}
+
 /* HEADER */
 
 header {
@@ -273,7 +277,6 @@ main .container h1 .highlight {
 
 .activities .col2-card-scroller {
   /* background-color: green; */
-  height: 100%;
   width: calc(100% / 4 * 3);
   display: flex;
   overflow: hidden;
@@ -287,7 +290,6 @@ main .container h1 .highlight {
   /* background-color: lightseagreen; */
   /* border: black 2px solid;
   box-sizing: border-box; */
-  height: inherit;
   width: calc(100% / 3 - (3rem / 3));
   flex-shrink: 0;
   position: relative;
@@ -295,8 +297,14 @@ main .container h1 .highlight {
 
 .card-scroller-itemview .card-img {
   cursor: pointer;
+  height: 60%;
   object-fit: cover;
   object-position: center;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
 }
 
 .card-scroller-itemview img:hover {
@@ -309,6 +317,7 @@ main .container h1 .highlight {
 
 .activities .card-content-info {
   margin-top: 0.5rem;
+  height: 40%;
 }
 
 .activities .card-content-headerlink {
@@ -387,3 +396,34 @@ main .container h1 .highlight {
   color: white;
   margin-right: 0.5rem;
 }
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #f9f1ec;
+}
+
+footer img {
+  height: 32px;
+  width: 32px;
+  margin-right: 1rem;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer span{
+    margin-right: 0.2rem;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1184px) {}
+
+1184px, 1024px et 768px.
